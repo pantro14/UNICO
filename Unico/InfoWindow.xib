@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaCd.ttf">
+            <string>Helvetica57-Condensed</string>
+            <string>Helvetica57-Condensed</string>
+            <string>Helvetica57-Condensed</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomInfoWindow">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oulet" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vko-Mh-CJM" userLabel="LabelStore">
+                    <rect key="frame" x="115" y="5" width="177" height="24"/>
+                    <fontDescription key="fontDescription" name="Helvetica57-Condensed" family="Helvetica57-Condensed" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10% de Decuesto" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="852-oF-agW" userLabel="LabelDiscount">
+                    <rect key="frame" x="115" y="41" width="177" height="43"/>
+                    <fontDescription key="fontDescription" name="Helvetica57-Condensed" family="Helvetica57-Condensed" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oulet" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ora-rs-js5" userLabel="LabelPromotion">
+                    <rect key="frame" x="115" y="23" width="177" height="33"/>
+                    <fontDescription key="fontDescription" name="Helvetica57-Condensed" family="Helvetica57-Condensed" pointSize="17"/>
+                    <color key="textColor" red="0.73333333329999995" green="0.031372549020000001" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KjR-Mk-Xf0">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultDetalleOferta.png" translatesAutoresizingMaskIntoConstraints="NO" id="fcc-Ia-POi">
+                            <rect key="frame" x="5" y="5" width="90" height="71"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llN-bC-qgz">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="touchButtonElementPromotion:" destination="iN0-l3-epB" eventType="touchUpInside" id="DOh-Q9-Q9P"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imagePromotion" destination="fcc-Ia-POi" id="W0g-Yy-xEj"/>
+                <outlet property="labelDiscount" destination="852-oF-agW" id="WTE-a1-sVd"/>
+                <outlet property="labelPromotion" destination="Ora-rs-js5" id="58c-zP-1Ow"/>
+                <outlet property="labelStore" destination="vko-Mh-CJM" id="G5p-vN-GK8"/>
+            </connections>
+            <point key="canvasLocation" x="172" y="223"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="defaultDetalleOferta.png" width="640" height="510"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaCd.ttf">
+            <string>Helvetica57-Condensed</string>
+            <string>Helvetica57-Condensed</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeachTableCellView" rowHeight="60" id="YbW-XA-x80" customClass="SeachTableCellView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YbW-XA-x80" id="SCW-JV-uim">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adidas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvS-lh-pZq">
+                        <rect key="frame" x="78" y="8" width="234" height="21"/>
+                        <fontDescription key="fontDescription" name="Helvetica57-Condensed" family="Helvetica57-Condensed" pointSize="18"/>
+                        <color key="textColor" red="0.74613360969999998" green="0.0" blue="0.0080963005269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Local 101- Piso 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0A-6j-F8C">
+                        <rect key="frame" x="78" y="32" width="227" height="23"/>
+                        <fontDescription key="fontDescription" name="Helvetica57-Condensed" family="Helvetica57-Condensed" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scicon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gnR-yK-KlL">
+                        <rect key="frame" x="0.0" y="-2" width="84" height="91"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scicon10SMALL.png" translatesAutoresizingMaskIntoConstraints="NO" id="uOM-nM-E8X">
+                        <rect key="frame" x="219" y="31" width="50" height="40"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scicon2SMALL.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Ww-Zo-ptn">
+                        <rect key="frame" x="262" y="31" width="50" height="40"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imageSecondCategory" destination="uOM-nM-E8X" id="g3V-AY-2UT"/>
+                <outlet property="imageStore" destination="gnR-yK-KlL" id="UlK-zQ-BxB"/>
+                <outlet property="imageThirdCategory" destination="1Ww-Zo-ptn" id="fWn-QZ-DlT"/>
+                <outlet property="labelLocal" destination="y0A-6j-F8C" id="MPQ-dP-ddB"/>
+                <outlet property="labelStore" destination="bvS-lh-pZq" id="Blh-Lc-GqI"/>
+            </connections>
+            <point key="canvasLocation" x="190" y="151"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="scicon1.png" width="168" height="183"/>
+        <image name="scicon10SMALL.png" width="100" height="82"/>
+        <image name="scicon2SMALL.png" width="100" height="82"/>
+    </resources>
+</document>

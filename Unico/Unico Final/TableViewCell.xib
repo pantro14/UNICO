@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaCd.ttf">
+            <string>Helvetica57-Condensed</string>
+            <string>Helvetica57-Condensed</string>
+            <string>Helvetica57-Condensed</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="267" id="KGk-i7-Jjw" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="247"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="woQ-rd-HtA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="247"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fz-bh-9uw">
+                        <rect key="frame" x="-1" y="0.0" width="320" height="247"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="tappedCell:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Tbl-oM-pfS"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textBackgroundShadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="OK4-Vy-xv7">
+                        <rect key="frame" x="0.0" y="170" width="340" height="80"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgd-nM-X5P">
+                        <rect key="frame" x="14" y="214" width="200" height="32"/>
+                        <fontDescription key="fontDescription" name="Helvetica57-Condensed" family="Helvetica57-Condensed" pointSize="20"/>
+                        <color key="textColor" red="0.96862745098039216" green="0.92941176470588238" blue="0.13333333333333333" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3O-3C-cgq">
+                        <rect key="frame" x="14" y="192" width="195" height="27"/>
+                        <fontDescription key="fontDescription" name="Helvetica57-Condensed" family="Helvetica57-Condensed" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL6-Lf-1Sn">
+                        <rect key="frame" x="216" y="189" width="96" height="55"/>
+                        <fontDescription key="fontDescription" name="Helvetica57-Condensed" family="Helvetica57-Condensed" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slideShare.png" translatesAutoresizingMaskIntoConstraints="NO" id="hdA-Jl-Yw1" userLabel="slidePromotion">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="actionButton" destination="5fz-bh-9uw" id="oL8-6e-UHQ"/>
+                <outlet property="discountPromotions" destination="RL6-Lf-1Sn" id="77d-Rq-gvp"/>
+                <outlet property="imagePromotion" destination="woQ-rd-HtA" id="Z79-Oh-avQ"/>
+                <outlet property="promotionName" destination="Bgd-nM-X5P" id="t5n-qP-Tcu"/>
+                <outlet property="slide" destination="hdA-Jl-Yw1" id="GU3-CD-CO7"/>
+                <outlet property="storeName" destination="X3O-3C-cgq" id="mzB-fi-nXD"/>
+            </connections>
+            <point key="canvasLocation" x="-81" y="290.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="slideShare.png" width="640" height="500"/>
+        <image name="textBackgroundShadow.png" width="639" height="120"/>
+    </resources>
+</document>

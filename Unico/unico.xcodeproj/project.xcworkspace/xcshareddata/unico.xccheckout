@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7C843CCE-262D-49D3-8670-B7792D597114</string>
+	<key>IDESourceControlProjectName</key>
+	<string>unico</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1BF666A3CAE04B86937843A1DDB5131E8F5917FE</key>
+		<string>http://ctswebtfclo02:8080/tfs/CollectionCD/_git/CCUNICO_IOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>source/Unico/unico.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1BF666A3CAE04B86937843A1DDB5131E8F5917FE</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://ctswebtfclo02:8080/tfs/CollectionCD/_git/CCUNICO_IOS</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1BF666A3CAE04B86937843A1DDB5131E8F5917FE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1BF666A3CAE04B86937843A1DDB5131E8F5917FE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
